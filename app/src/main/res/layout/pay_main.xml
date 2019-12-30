@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/alipay_logo" />
+
+
+    <Button
+        android:id="@+id/appPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="appLocal"
+        android:text="客户端生成订单支付"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/appPayByNet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="appNet"
+        android:text="服务端生成订单支付"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/h5pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="h5Pay"
+        android:text="PC/WAP支付"
+        android:textAllCaps="false" />
+
+</LinearLayout>
