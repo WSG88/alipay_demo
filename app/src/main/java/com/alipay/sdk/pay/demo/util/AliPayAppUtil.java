@@ -1,5 +1,7 @@
 package com.alipay.sdk.pay.demo.util;
 
+import android.util.Log;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.security.KeyFactory;
@@ -31,7 +33,7 @@ public class AliPayAppUtil {
             appId, payId, totalAmount, subject, body, timeoutExpress, notify_url);
     String string =
         AliPayAppUtil.buildOrderParam(params) + "&" + AliPayAppUtil.getSign(params, rsaKey, true);
-    System.out.println("order pay info : " + string);
+    Log.i("msp","order byAll info by local : " + string);
     return string;
   }
 
@@ -61,7 +63,7 @@ public class AliPayAppUtil {
             + payId
             + "\"}");
     keyValues.put("charset", "utf-8");
-    keyValues.put("method", "alipay.trade.app.pay");
+    keyValues.put("method", "alipay.trade.app.byAll");
     keyValues.put("sign_type", "RSA2");
     keyValues.put("version", "1.0");
     keyValues.put("notify_url", notify_url);

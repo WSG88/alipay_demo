@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:onClick="appLocal"
+        android:onClick="byLocal"
         android:text="客户端生成订单支付"
         android:textAllCaps="false" />
 
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:onClick="appNet"
+        android:onClick="byNet"
         android:text="服务端生成订单支付"
         android:textAllCaps="false" />
 
@@ -39,6 +39,15 @@
         android:layout_margin="10dp"
         android:onClick="h5Pay"
         android:text="PC/WAP支付"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="byAll"
+        android:text="全流程"
         android:textAllCaps="false" />
 
 </LinearLayout>
